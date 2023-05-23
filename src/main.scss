@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500&family=Montserrat:wght@500;700&display=swap');
+
+$primaryColor: hsl(225,50%,48%);
+$secondaryColor: hsl(180,17%,95%);
+$colorOne: hsl(15,74%,70%);
+$colorTwo: hsl(28,100%,82%);
+$hoverColor: hsl(225,56%,59%);
+$whiteColor: hsl(0,0%,100%);
+$blackColor: hsl(0,0%,12%);
+$textColor: hsl(240,1%,48%);
+$borderColor: hsl(0,0%,83%);
+$whiteColorDim: hsl(0,0%,93%);
+$grayBg: hsl(0,0%,96%);
+$grayText: rgb(145,145,145);
+$inputColor: hsl(330,12%,97%);
+$boxShadow: rgba(0,0,0,0.1) 0px 10px 15px -3px, rgba(0,0,0,0.05) 0px 4px 6px -2px;
+$transition: .4s ease;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+body{
+    background: $whiteColor;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.section{
+    padding: 4rem 0 2rem;
+}
+
+.container{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.icon{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+.grid{
+    display: grid;
+    align-items: center;
+}
+
+.none{
+    display: none;
+}
+
+.btn{
+    padding: .7rem 1.5rem;
+    background: $primaryColor;
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    color: $whiteColor;
+    
+    a{
+        color: $whiteColor;
+        font-weight: 500;
+    }
+
+    &:hover{
+        background: $hoverColor;
+    }
+}
+
+img, video{
+    width: 100%;
+    height: auto;
+}
+
+input{
+    font-size: 100%;
+    color: $grayText;
+}
+
+p{
+    font-size: 13px;
+    color: $grayText;
+    line-height: 22px;
+}
+
+h4{
+    padding: 1rem 0;
+    font-weight: 700;
+    color: $blackColor;
+}
+
+h2{
+    font-size: 25px;
+    padding: 1rem 0;
+    color: $blackColor;
+}
+
+// navbar
+.navBar{
+    position: fixed;
+    flex-direction: column;
+    width: 100%;
+    z-index: 1000;
+
+    .navBarOne, .navBarTwo{
+        justify-content: space-between;
+        padding: 1rem;
+        width: 100%;
+    }
+    .navBarOne{
+        background: $secondaryColor;
+
+        .icon:hover{
+            color: $primaryColor;
+        }
+        .atb{
+            gap: 1rem;
+
+            span{
+                color: $blackColor;
+                font-size: 13px;
+                cursor: pointer;
+
+                &:hover{
+                    color: $primaryColor;
+                    font-size: 700;
+                }
+            }
+            
+        }
+    }
+    .navBarTwo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        top: 3rem;
+        padding: 1.5rem 1rem;
+        position: fixed;
+        transition: .3s ease-in-out;
+
+        .logoDiv{
+            .logo{
+                width: 20%;
+            }
+        }
+        @media screen and (max-width:768px) {
+            .navBarMenu{
+                position: absolute;
+                background: $secondaryColor;
+                padding: 1.5rem;
+                border-radius: 10px;
+                top: 5rem;
+                right: -50%;
+                width: 80%;
+                transform: translateX(50%);
+                z-index: 2000;
+                box-shadow: rgba(0,0,0,0.1) 0px 10px 15px -3px, rgba(0,0,0,0.05) 0px 4px 6px -2px; 
+                border: 2px solid $whiteColor;
+                transition: .4s ease-in-out;
+
+                .menu{
+                    flex-direction: column;
+                    gap: .5rem;
+                    text-align: center;
+
+                    .listItem{
+                        padding: .5rem 0;
+                        cursor: pointer;
+                        color: $blackColor;
+
+                        &:hover{
+                            color: $primaryColor;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .btnOne{
+                    display: block;
+                    justify-content: center;
+                    margin: auto;
+                    margin-top: 1rem;
+                }
+            }
+            .btnTwo{
+                display: none;
+            }
+        }
+        .toggleIcon{
+            .icon{
+                font-size: 30px;
+                color: $blackColor;
+            }
+        }
+        .showNavBar{
+            right: 50%;
+            transition: .5s ease-in-out;
+        }
+    }
+}
