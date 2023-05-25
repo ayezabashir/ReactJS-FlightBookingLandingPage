@@ -7,6 +7,7 @@ import logo from '../../assets/logo.png'
 
 const Navbar = () => {
 
+  // remove navBar on small screens
   const [active, setActive] = useState('navBarMenu');
   const showNavBar = () => {
     setActive('navBarMenu showNavBar');
@@ -14,6 +15,17 @@ const Navbar = () => {
   const removeNavBar = () => {
     setActive('navBarMenu');
   }
+
+  // add bgcolor on second nabVar
+  const [noBg, addBg] = useState('navBarTwo');
+  const addBgColor = () => {
+    if (window.scrollY >= 10) {
+      addBg('navBarTwo navbar_With_Bg');
+    } else {
+      addBg('navBarTwo')
+    }
+  }
+  window.addEventListener('scroll', addBgColor)
 
   return (
     <div className='navBar flex'>
@@ -34,7 +46,7 @@ const Navbar = () => {
 
       </div>
 
-      <div className="navBarTwo flex">
+      <div className={noBg}>
         <div className="logoDiv">
           <img src={logo} className='logo' alt="logo" />
         </div>
