@@ -399,3 +399,50 @@ h2 {
     }
   }
 }
+
+.info {
+  background: $secondaryColor;
+  .infoContainer {
+    flex-direction: column;
+    text-align: center;
+    grid-area: 1.5rem;
+    justify-content: space-between;
+  }
+  .cardsDiv {
+    gap: 1.5rem;
+    margin-top: 3rem;
+    .singleCard {
+      background: $whiteColor;
+      padding: 3rem 2rem;
+      border-radius: 4rem;
+      gap: 1rem;
+      text-align: center;
+      margin: auto;
+      height: 320px;
+      width: 90%;
+      max-width: 250px;
+      .iconDiv {
+        justify-content: center;
+        margin: auto;
+        background: $primaryColor;
+        width: max-content;
+        height: 55px;
+        padding: 1rem;
+        border-radius: 3rem;
+        .icon {
+          color: $whiteColor;
+        }
+      }
+      .cardTitle {
+        color: $blackColor;
+        font-weight: 700;
+      }
+      .colorOne {
+        background: $colorOne;
+      }
+      .colorTwo {
+        background: $colorTwo;
+      }
+    }
+  }
+}
