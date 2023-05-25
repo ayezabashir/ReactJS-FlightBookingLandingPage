@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar/Navbar'
 import Home from './components/Home/Home'
 import Search from './components/Search/Search'
+import Support from './components/Support/Support'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <Home />
       <Search />
+      <Support />
     </div>
   )
 }

@@ -3,7 +3,7 @@
 $primaryColor: hsl(225, 50%, 48%);
 $secondaryColor: hsl(180, 17%, 95%);
 $colorOne: hsl(15, 74%, 70%);
-$colorTwo: hsl(28, 100%, 82%);
+$colorTwo: hsl(68, 85%, 35%);
 $hoverColor: hsl(225, 56%, 59%);
 $whiteColor: hsl(0, 0%, 100%);
 $blackColor: hsl(0, 0%, 12%);
@@ -346,6 +346,54 @@ h2 {
               opacity: 0.5s;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+// Support
+.support {
+  .sectionContainer {
+    .titlesDiv {
+      text-align: center;
+      small {
+        letter-spacing: 0.8rem;
+        text-transform: uppercase;
+        font-size: 13px;
+        color: $blackColor;
+        line-height: 1.5rem;
+      }
+    }
+    .infoDiv {
+      margin-top: 2rem;
+      gap: 1.5rem;
+      .textDiv {
+        gap: 1.5rem;
+        .singleInfo {
+          .number {
+            background: $primaryColor;
+            padding: 5px 12px;
+            width: 40px;
+            border-radius: 3rem;
+            text-align: center;
+            font-size: 13px;
+            color: $whiteColor;
+            font-weight: 700;
+          }
+          .colorTwo {
+            background: $colorTwo;
+          }
+          .colorOne {
+            background: $colorOne;
+          }
+        }
+      }
+      .imgDiv {
+        margin: auto;
+        img {
+          width: 100%;
+          max-width: 420px;
         }
       }
     }
