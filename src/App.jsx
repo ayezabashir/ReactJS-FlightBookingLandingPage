@@ -6,6 +6,7 @@ import Info from './components/Info/Info'
 import Lounge from './components/Lounge/Lounge'
 import Travelers from './components/Travelers/Travelers'
 import Subscribers from './components/Subscribers/Subscribers'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Lounge />
       <Travelers />
       <Subscribers />
+      <Footer />
     </div>
   )
 }

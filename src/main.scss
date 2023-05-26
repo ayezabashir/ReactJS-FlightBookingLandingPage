@@ -600,3 +600,59 @@ h2 {
     }
   }
 }
+
+// Footer
+.footer {
+  background: $secondaryColor;
+
+  .sectionContainer {
+    gap: 2.5rem;
+    .gridOne {
+      gap: 1rem;
+      justify-content: center;
+      margin: auto;
+
+      .logoDiv {
+        .Logo {
+          width: 20%;
+        }
+      }
+      .socialIcon {
+        margin-top: 1rem;
+        gap: 1rem;
+        .icon {
+          height: 40px;
+          width: 40px;
+          border-radius: 10rem;
+          border: 1px solid $borderColor;
+          box-shadow: $boxShadow;
+          padding: 0.4rem;
+          color: $grayText;
+          &:hover {
+            background: $primaryColor;
+            color: $whiteColor;
+            transition: $transition;
+          }
+        }
+      }
+    }
+    .footerLinks {
+      display: grid;
+      .linkTitle {
+        color: $blackColor;
+        font-weight: 500;
+        display: block;
+        padding-bottom: 1rem;
+      }
+      li a {
+        display: block;
+        color: $grayText;
+        transition: $transition;
+        &:hover {
+          color: $primaryColor;
+          transform: translateX(7px);
+        }
+      }
+    }
+  }
+}
