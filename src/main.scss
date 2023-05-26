@@ -572,3 +572,31 @@ h2 {
     }
   }
 }
+
+// Subscribe
+.subscribe {
+  background: $secondaryColor;
+  .sectionContainer {
+    text-align: center;
+    .inputDiv {
+      margin-top: 1rem;
+      flex-direction: column;
+      background: $whiteColor;
+      border-radius: 1rem;
+      input {
+        border: none;
+        outline: none;
+        background: transparent;
+        padding: 1rem 0.5rem;
+
+        &::placeholder {
+          font-size: 13px;
+          opacity: 0.5;
+        }
+      }
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+}

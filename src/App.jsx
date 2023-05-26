@@ -5,6 +5,7 @@ import Support from './components/Support/Support'
 import Info from './components/Info/Info'
 import Lounge from './components/Lounge/Lounge'
 import Travelers from './components/Travelers/Travelers'
+import Subscribers from './components/Subscribers/Subscribers'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Info />
       <Lounge />
       <Travelers />
+      <Subscribers />
     </div>
   )
 }
