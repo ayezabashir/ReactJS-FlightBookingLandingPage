@@ -446,3 +446,31 @@ h2 {
     }
   }
 }
+
+// Lounge
+.lounge {
+  .sectionContainer {
+    gap: 1.5rem;
+    .imgDiv {
+      margin: auto;
+      img {
+        width: 100%;
+        max-width: 430px;
+      }
+    }
+    .textDiv {
+      .grids {
+        margin-top: 1rem;
+        grid-auto-flow: 1.5rem;
+        .singleGrid {
+          .gridTitle {
+            display: block;
+            padding-bottom: 0.5rem;
+            font-weight: 500;
+            color: $blackColor;
+          }
+        }
+      }
+    }
+  }
+}
