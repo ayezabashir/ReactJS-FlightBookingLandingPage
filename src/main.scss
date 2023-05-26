@@ -474,3 +474,101 @@ h2 {
     }
   }
 }
+
+// Travellers
+.travelers {
+  .sectionContainer {
+    text-align: center;
+    .travelersContainer {
+      margin-top: 1rem;
+      gap: 1.5rem;
+      .singleTraveler {
+        position: relative;
+        height: 320px;
+        width: 85%;
+        max-width: 250px;
+        overflow: hidden;
+        border-radius: 2rem;
+        gap: 1rem;
+        margin: auto;
+        .destinationImage,
+        .travelerImage,
+        .travelerName {
+          position: absolute;
+        }
+        .destinationImage {
+          height: 100%;
+          width: 100%;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          object-fit: cover;
+        }
+        .travelerImage {
+          height: 50px;
+          width: 50px;
+          object-fit: cover;
+          border-radius: 50%;
+          bottom: 20px;
+          left: 70%;
+          transform: translateX(-50%);
+          border: 3px solid rgba(0, 0, 0, 0.6);
+          transition: $transition;
+          animation: animated 2.3s infinite;
+        }
+        @keyframes animated {
+          0% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(8px);
+          }
+          100% {
+            transform: translateY(0px);
+          }
+        }
+        .travelerName {
+          bottom: -100%;
+          width: 100%;
+          height: max-content;
+          background: $whiteColor;
+          padding: 1.5rem 1rem;
+          transition: $transition;
+          animation: animatedBorder 2.3s infinite;
+
+          span {
+            display: block;
+            color: black;
+            font-weight: 700;
+          }
+          p {
+            color: $primaryColor;
+          }
+        }
+        @keyframes animatedBorder {
+          0% {
+            border-radius: 0rem;
+          }
+          50% {
+            border-radius: 2rem;
+          }
+          100% {
+            border-radius: 0rem;
+          }
+        }
+        &:hover {
+          .travelerName {
+            bottom: 0;
+            transition: 0.4s ease-in-out;
+          }
+          .travelerImage {
+            bottom: 85px;
+            transition: 0.4s ease-in-out;
+            z-index: 1;
+          }
+        }
+      }
+    }
+  }
+}

@@ -4,6 +4,7 @@ import Search from './components/Search/Search'
 import Support from './components/Support/Support'
 import Info from './components/Info/Info'
 import Lounge from './components/Lounge/Lounge'
+import Travelers from './components/Travelers/Travelers'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Support />
       <Info />
       <Lounge />
+      <Travelers />
     </div>
   )
 }
