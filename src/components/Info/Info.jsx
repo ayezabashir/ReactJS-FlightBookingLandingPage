@@ -16,7 +16,7 @@ const Info = () => {
               <RxCalendar className='icon' />
             </div>
             <span className="cardTitle">Book Now</span>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos aliquam labore et provident quod.</p>
+            <p>Lorem ipsum, dolor sit amet elit. Dignissimos provident quod.</p>
           </div>
 
           <div className="singleCard grid">
@@ -24,7 +24,7 @@ const Info = () => {
               <BsShieldCheck className='icon' />
             </div>
             <span className="cardTitle">Safety</span>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos aliquam labore et provident quod.</p>
+            <p>Lorem ipsum, dolor sit amet elit. Dignissimos provident quod.</p>
           </div>
 
           <div className="singleCard grid">
@@ -32,7 +32,7 @@ const Info = () => {
               <BsFillBookmarkFill className='icon' />
             </div>
             <span className="cardTitle">Save More</span>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos aliquam labore et provident quod.</p>
+            <p>Lorem ipsum, dolor sit amet elit. Dignissimos provident quod.</p>
           </div>
         </div>
       </div>
