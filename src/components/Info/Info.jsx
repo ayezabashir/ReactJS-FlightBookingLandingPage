@@ -23,7 +23,7 @@ const Info = () => {
             <div className="iconDiv flex colorOne">
               <BsShieldCheck className='icon' />
             </div>
-            <span className="cardTitle">Your safety is our priority</span>
+            <span className="cardTitle">Safety</span>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos aliquam labore et provident quod.</p>
           </div>
 

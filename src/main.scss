@@ -292,6 +292,7 @@ h2 {
         border-radius: 3rem;
         width: 80%;
         text-align: center;
+        cursor: pointer;
 
         &:hover {
           background: $primaryColor;
@@ -313,6 +314,8 @@ h2 {
       justify-content: center;
       flex-direction: column;
       gap: 1.5rem;
+      margin-top: 1.5rem;
+      cursor: pointer;
 
       .singleInput {
         .iconDiv {
@@ -347,6 +350,9 @@ h2 {
             }
           }
         }
+      }
+      .btnBlock {
+        justify-content: center;
       }
     }
   }
@@ -648,6 +654,7 @@ h2 {
         display: block;
         color: $grayText;
         transition: $transition;
+        padding: 0.3rem 0;
         &:hover {
           color: $primaryColor;
           transform: translateX(7px);
@@ -655,4 +662,452 @@ h2 {
       }
     }
   }
+}
+
+// Adding media queries
+@media screen and (min-width: 480px) {
+  // Home
+  .home {
+    padding-top: 12rem;
+  }
+  // Search
+  .search {
+    .sectionContainer {
+      .searchInputs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+  // Travel
+  .travelers {
+    .sectionContainer {
+      .travelersContainer {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+  // Subscribe
+  .subscribe {
+    .sectionContainer {
+      max-width: 80%;
+      margin: auto;
+      .inputDiv {
+        flex-direction: row;
+        padding: 0 0.5rem;
+        border-radius: 3rem;
+      }
+    }
+  }
+  // Footer
+  .footer {
+    .sectionContainer {
+      align-items: flex-start;
+      grid-template-columns: repeat(2, 1fr);
+      .footerLinks {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 570px) {
+  // Home
+  .home {
+    .mainText {
+      width: 80%;
+    }
+    .homeImages {
+      .video {
+        border-radius: 15rem;
+      }
+      .plane {
+        position: absolute;
+        width: 95%;
+        top: -8%;
+      }
+    }
+  }
+  // Search
+  .search {
+    .sectionContainer {
+      .btns {
+        border-radius: 3rem;
+        flex-direction: row;
+      }
+    }
+  }
+  // Support
+  .support {
+    .sectionContainer {
+      .infoDiv {
+        .textDiv {
+          margin-top: 2rem;
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+  }
+  // Info
+  .info {
+    .infoContainer {
+      .titleDiv {
+        flex-direction: row;
+        h2 {
+          text-align: left;
+          max-width: 500px;
+        }
+      }
+      .cardsDiv {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+  // Lounge
+  .lounge {
+    .sectionContainer {
+      .textDiv {
+        .grids {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+  }
+  // Subscriber
+  .subscribe {
+    .sectionContainer {
+      .inputDiv {
+        justify-content: space-between;
+        .btn {
+          max-width: max-content;
+        }
+      }
+    }
+  }
+  // Footer
+  .footer {
+    .sectionContainer {
+      padding-top: 2rem;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media screen and (min-width: 680px) {
+  // Home
+  .home {
+    .mainText {
+      width: 80%;
+    }
+    .homeImages {
+      .videoDiv {
+        width: 80%;
+        .video {
+          height: 100%;
+          width: 100%;
+          border-radius: 15rem;
+        }
+      }
+      .plane {
+        width: 95%;
+        top: -8%;
+      }
+    }
+  }
+  // Search
+  .search {
+    .sectionContainer {
+      .btns {
+        border-radius: 3rem;
+        flex-direction: row;
+      }
+      .searchInputs {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+  // Footer
+  .footer {
+    .sectionContainer {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  // Navbar
+  .navBar {
+    align-items: center;
+    .navBarOne {
+      .none {
+        display: flex;
+        gap: 1.5rem;
+
+        li {
+          font-size: 13px;
+          gap: 0.5rem;
+          color: $textColor;
+          &:hover {
+            color: $primaryColor;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .navBarTwo {
+      justify-content: space-between;
+      align-items: center;
+      .logoDiv {
+        .logo {
+          max-width: 20%;
+        }
+      }
+      .menu {
+        flex-direction: row;
+        gap: 0.5rem;
+        .listItem {
+          padding: 0 0.5rem;
+          font-size: 14px;
+          cursor: pointer;
+          color: $textColor;
+          font-weight: 700;
+          &:hover {
+            color: $primaryColor;
+            font-weight: 700;
+          }
+        }
+      }
+      .btnOne,
+      .toggleIcon {
+        display: none;
+      }
+    }
+  }
+  // Search
+  .search {
+    .sectionContainer {
+      .btns {
+        width: 70%;
+        border-radius: 3rem;
+        flex-direction: row;
+      }
+      .searchInputs {
+        grid-template-columns: repeat(4, 1fr);
+        .singleInput {
+          .texts {
+            input {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  // Support
+  .support {
+    .sectionContainer {
+      .infoDiv {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin-top: 5rem;
+        .textDiv {
+          margin-top: 0rem;
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    }
+  }
+  // Info
+  .info {
+    .infoContainer {
+      padding: 0 6rem;
+      .titleDiv {
+        width: 90%;
+        margin: auto;
+        align-items: center;
+      }
+      .cardsDiv {
+        grid-template-columns: repeat(3, 1fr);
+        .singleBtn {
+          max-width: 260px;
+          padding: 3rem 0.5rem;
+        }
+      }
+    }
+  }
+  // Lounge
+  .lounge {
+    .sectionContainer {
+      grid-template-columns: repeat(2, 1fr);
+      .textDiv {
+        grid-area: 1;
+        .grids {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+  }
+  // Travelers
+  .travelers {
+    .sectionContainer {
+      .travelersContainer {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .home {
+    padding-top: 3rem;
+    .mainText {
+      width: 70%;
+      padding-bottom: 1.5rem;
+      font-size: 22px;
+      line-height: 4rem;
+    }
+  }
+  // Search
+  .search {
+    .sectionContainer {
+      .searchInputs {
+        grid-template-columns: repeat(5, 1fr);
+      }
+    }
+  }
+  // Traveler
+  .travelers {
+    .sectionContainer {
+      .travelersContainer {
+        grid-template-columns: repeat(4, 1fr);
+        margin-bottom: 3rem 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 27px;
+  }
+  .section {
+    padding: 6rem 0 4rem;
+  }
+  .container {
+    width: 75%;
+    margin: auto;
+  }
+  .navBar {
+    .navBarOne,
+    .navBarTwo {
+      padding: 1.5rem 5rem;
+    }
+    .navbar_With_Bg {
+      padding: 0 5rem;
+    }
+  }
+  .home {
+    .mainText {
+      width: 60%;
+      font-size: 25px;
+      line-height: 4rem;
+    }
+    .homeImages {
+      .videoDiv {
+        width: 90%;
+        height: 300px;
+        .video {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 15rem;
+        }
+      }
+      .plane {
+        width: 100%;
+        top: -10%;
+      }
+    }
+  }
+  .search {
+    .sectionContainer {
+      .btns {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1106px) {
+  .subscribe {
+    .sectionContainer {
+      max-width: 60%;
+    }
+  }
+}
+
+@media screen and (min-width: 1332px) {
+  .navBar {
+    .navBarTwo {
+      .menu {
+        gap: 1rem;
+        .listItem {
+          padding: 0 1.5rem;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .support {
+    .sectionContainer {
+      .infoDiv {
+        gap: 1rem;
+        .textDiv {
+          .singleInfo {
+            p {
+              max-width: 500px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .subscribe {
+    .sectionContainer {
+      max-width: 50%;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .home {
+    .homeImages {
+      .plane {
+        width: 90%;
+        top: -30%;
+      }
+    }
+  }
+}
+
+::selection {
+  background: $primaryColor;
+  color: $whiteColor;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: $grayBg;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primaryColor;
+  border-radius: 10px;
 }
