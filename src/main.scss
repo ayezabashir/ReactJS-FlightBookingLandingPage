@@ -455,6 +455,7 @@ h2 {
 
 // Lounge
 .lounge {
+  margin-top: 2rem;
   .sectionContainer {
     gap: 1.5rem;
     .imgDiv {
@@ -610,6 +611,7 @@ h2 {
 // Footer
 .footer {
   background: $secondaryColor;
+  padding-bottom: 5rem;
 
   .sectionContainer {
     gap: 2.5rem;
@@ -924,6 +926,7 @@ h2 {
       .titleDiv {
         width: 90%;
         margin: auto;
+        justify-content: space-between;
         align-items: center;
       }
       .cardsDiv {
@@ -1000,7 +1003,7 @@ h2 {
     padding: 6rem 0 4rem;
   }
   .container {
-    width: 75%;
+    width: 77%;
     margin: auto;
   }
   .navBar {
