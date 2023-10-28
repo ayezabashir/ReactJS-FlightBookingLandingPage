@@ -273,11 +273,10 @@ h2 {
 .search {
   .sectionContainer {
     width: 100%;
-    padding: 1.5rem;
+    padding: 1.5rem 0;
     border: 2px solid $grayBg;
     border-radius: 16px;
     row-gap: 2rem;
-
     .btns {
       background: $secondaryColor;
       padding: 0.5rem;
@@ -285,12 +284,11 @@ h2 {
       flex-direction: column;
       margin: auto;
       width: 100%;
-
       .singleBtn {
-        padding: 0.8rem 1.5rem;
-        font-size: 13px;
+        padding: 0.8rem 1rem;
+        font-size: 12px;
         border-radius: 3rem;
-        width: 80%;
+        width: 100%;
         text-align: center;
         cursor: pointer;
 
@@ -301,7 +299,6 @@ h2 {
           transition: 0.4s ease;
         }
       }
-
       .active {
         background: $primaryColor;
         color: $whiteColor;
@@ -333,6 +330,7 @@ h2 {
         .texts {
           h4 {
             padding-top: 0;
+            font-size: 1rem;
             padding-bottom: 0.7rem;
             color: $blackColor;
             font-weight: 700;
@@ -455,7 +453,7 @@ h2 {
 
 // Lounge
 .lounge {
-  margin-top: 2rem;
+  margin-top: 4rem !important;
   .sectionContainer {
     gap: 1.5rem;
     .imgDiv {
@@ -470,6 +468,8 @@ h2 {
         margin-top: 1rem;
         grid-auto-flow: 1.5rem;
         .singleGrid {
+          padding-right: 1rem;
+          padding-bottom: 1rem;
           .gridTitle {
             display: block;
             padding-bottom: 0.5rem;
