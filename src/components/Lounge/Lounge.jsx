@@ -1,4 +1,4 @@
-import imageGrid from '../../assets/imageGrid.png'
+import imageGrid from '../../assets/imageGrid.webp'
 
 const Lounge = () => {
   return (

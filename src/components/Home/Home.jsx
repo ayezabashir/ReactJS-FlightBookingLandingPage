@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 
 import video from '../../assets/video.mp4'
-import aeroplane from '../../assets/aeroplane.png'
+import aeroplane from '../../assets/aeroplane.webp'
 
 import Aos from 'aos'
 import 'aos/dist/aos.css'

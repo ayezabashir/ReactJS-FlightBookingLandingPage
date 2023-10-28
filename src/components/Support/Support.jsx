@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import supportimg from "../../assets/supportimg.png"
+import supportimg from "../../assets/supportimg.webp"
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
